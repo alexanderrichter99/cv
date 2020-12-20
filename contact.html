@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktdaten</title>
+  </head>
+  <body>
+    <h1>Kontaktdaten</h1>
+    <p><strong>E-mail: </strong>alexrichter0707@gmail.com</p>
+    <hr />
+    <!-- Form mit Label und Inputfeldern (einer Textbox, E-Mail Feld
+        und einem Submit Button etc.)
+        Form Attribute:
+        - action=mailto: E-Mail Programm öffnet sich mit dem entsprechenden Empfänger
+        - method=post: wird verwendet beim Verschicken von Daten
+        - enctype=text/plain: definiert, wie die Daten kodiert werden sollen,
+        wenn sie zum Server geschickt werden (nur bei method=post)-->
+    <form
+      action="mailto:mneko0707@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label>Dein Name: </label>
+      <!-- Attribut Name wird benötigt, um-->
+      <input type="text" name="deinName" /><br />
+      <label>Deine E-Mail: </label>
+      <input type="email" name="deineEmail" /><br />
+      <label for="">Deine Nachricht: </label><br />
+      <!-- Man kann dieses Textfeld so groß/klein ziehen wie man möchte,
+        jedoch die Startgröße wird hier festgelegt -->
+      <textarea name="deineNachricht" id="" cols="30" rows="10"></textarea
+      ><br />
+      <input type="submit" />
+    </form>
+    <hr />
+    <a href="index.html">Zurück zu Home</a>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!-- HTML 5 version -->
+<!DOCTYPE html>
+<html>
+  <!-- the head holds information about the webpage and it tells the browser 
+how it should handle the page -->
+
+  <head>
+    <!-- the meta elements give extra metadata to he HTML document
+        utf-8 is the standard encoding that should be used when working
+        with HTML 5 it includes all of the international symbols-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochi´s Personal Site</title>
+  </head>
+
+  <body>
+    <!-- Tabelle aus Layoutgründen = Bild und Beschreibung nebeneinander
+        zudem Attribut cellspacing für den gewünschten Abstand-->
+    <table cellspacing="20">
+      <tr>
+        <td>
+          <img
+            src="images/squirtle.jpg"
+            width="120"
+            height="150 "
+            alt="Mochi´s profile picture"
+          />
+        </td>
+
+        <td>
+          <!-- Image Element -->
+          <h1>Alexander Richter</h1>
+          <!-- the emphasis tag tells the browser the words that are enclosed
+              between it should be emphasized but the <i> tag only italicizes
+              the text:
+              <em> rather than <i> and also <strong> rather than <b> -->
+          <p>
+            <em
+              >Student und Praktikant bei
+              <strong
+                ><a href="https://www.adesso.de/de/index.jsp">Adesso</a></strong
+              >.</em
+            >
+          </p>
+          <p>
+            Ich bin Student an der
+            <a href="https://www.hm.edu">Hochschule München</a> und studiere
+            momentan im 5. Semester Wirtschaftsinformatik.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+    <h3>Schulische Laufbahn</h3>
+    <!-- ungeordnete Liste-->
+    <ul>
+      <li>
+        <a href="http://www.droste.musin.de">Droste-Hülshoff Grundschule</a>
+      </li>
+      <li>
+        <a href="http://homepage.egg-muenchen.de/index.php/de/"
+          >Erasmus-Grasser Gymnasium</a
+        >
+      </li>
+      <li><a href="https://www.hm.edu">Hochschule München</a></li>
+    </ul>
+    <hr />
+    <h3>Berufserfahrung</h3>
+    <!-- Tabelle: mögliche Strukturen mit <thead>, <tbody> und <tfoot>
+        border definiert die Breite des Rahmens in Pixeln, jedoch veraltet-->
+    <table cellspacing="10">
+      <thead>
+        <tr>
+          <th>Zeiträume</th>
+          <th>Arbeitgeber</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09/2020 - heute</td>
+          <td>adesso SE</td>
+        </tr>
+        <tr>
+          <td>02/2019 - heute</td>
+          <td>ZenJob GmbH</td>
+        </tr>
+        <tr>
+          <td>06/2018 - 11/2018</td>
+          <td>Aushilfe bei REWE Markt GmbH</td>
+        </tr>
+        <tr>
+          <td>11/2017 - 03/2018</td>
+          <td>Aushilfe bei Foot Locker Germany</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+
+    <!-- Nested Tabelle-->
+    <h3>Kenntnisse und Fähigkeiten</h3>
+    <table cellspacing="10">
+      <tbody>
+        <tr>
+          <td>Java</td>
+          <td>⭐⭐</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>⭐⭐</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>⭐</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <!-- Anchor Tags-->
+    <a href="hobbies.html">Meine Hobbys</a>
+    <h3>Lieblingsgerichte</h3>
+    <!-- Liste mit römischen Zeichen-->
+    <ol type="i">
+      <li>Massaman Curry</li>
+      <li>Lachs</li>
+      <li>Avocado Burger</li>
+    </ol>
+    <h3>Weitere Lieblingsgerichte</h3>
+    <!-- Startpunkt festlegen-->
+    <ol start="4">
+      <li>Wiener Schnitzel</li>
+      <li>Dürüm</li>
+      <li>Sushi</li>
+    </ol>
+    <a href="contact.html">Kontaktiere mich!</a>
+  </body>
+</html>
