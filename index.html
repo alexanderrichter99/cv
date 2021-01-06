@@ -1,138 +1,81 @@
-<!-- HTML 5 version -->
 <!DOCTYPE html>
-<html>
-  <!-- the head holds information about the webpage and it tells the browser 
-how it should handle the page -->
+<html lang="en">
 
-  <head>
-    <!-- the meta elements give extra metadata to he HTML document
-        utf-8 is the standard encoding that should be used when working
-        with HTML 5 it includes all of the international symbols-->
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mochi´s Personal Site</title>
-  </head>
+    <title>Alexander Richter</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="panda.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&family=Sacramento&display=swap"
+        rel="stylesheet" />
+</head>
 
-  <body>
-    <!-- Tabelle aus Layoutgründen = Bild und Beschreibung nebeneinander
-        zudem Attribut cellspacing für den gewünschten Abstand-->
-    <table cellspacing="20">
-      <tr>
-        <td>
-          <img
-            src="images/squirtle.jpg"
-            width="120"
-            height="150 "
-            alt="Mochi´s profile picture"
-          />
-        </td>
+<body>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-img" />
+        <h1>I'm Alexander.</h1>
+        <h2>a <span class="pro">pro</span>grammer.</h2>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
+        <img src="images/mountain.png" alt="mountain-img" />
+    </div>
 
-        <td>
-          <!-- Image Element -->
-          <h1>Alexander Richter</h1>
-          <!-- the emphasis tag tells the browser the words that are enclosed
-              between it should be emphasized but the <i> tag only italicizes
-              the text:
-              <em> rather than <i> and also <strong> rather than <b> -->
-          <p>
-            <em
-              >Student und Praktikant bei
-              <strong
-                ><a href="https://www.adesso.de/de/index.jsp">Adesso</a></strong
-              >.</em
-            >
-          </p>
-          <p>
-            Ich bin Student an der
-            <a href="https://www.hm.edu">Hochschule München</a> und studiere
-            momentan im 5. Semester Wirtschaftsinformatik.
-          </p>
-        </td>
-      </tr>
-    </table>
+    <div class="middle-container">
+        <div class="profile">
+            <img class="profilepic" src="images/blogger.png" width="400" height="400" alt="alex-img" />
+            <h2>Hello.</h2>
+            <p class="intro">
+                I am an intern at
+                <strong><a href="https://www.adesso.de/de/index.jsp">Adesso</a></strong>, a student at the
+                <a href="https://www.hm.edu">Munich University of Applied Sciences</a>
+                and I am currently studying business informatics in the 5th semester.
+            </p>
+        </div>
+        <hr />
+        <div class="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row">
+                <img class="computer" src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif"
+                    alt="computer-gif" />
+                <h3>Design & Development</h3>
+                <p>
+                    It wasn't until I started studying business informatics that I
+                    became interested in programming. However, since then I've been
+                    trying to improve and learn new things every day.
+                </p>
+            </div>
+            <div class="skill-row">
+                <img class="pikachu" src="https://media.giphy.com/media/kuWN0iF9BLQKk/giphy.gif" alt="pikachu-gif" />
+                <h3>Playing Video Games</h3>
+                <p>
+                    Video games are also one of my strengths. No matter if Pokémon,
+                    League of Legends or Among Us: I'm up for every game! And who knows,
+                    maybe one day I'll be involved in developing a game.
+                </p>
+            </div>
+        </div>
+        <hr />
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>
+                If you love programming and video games as much as I do.
+            </h3>
+            <p class="contact-message">
+                Then feel free to contact me and we will either program together or
+                compete in a game!
+            </p>
+            <a class="btn-contact" href="mailto:alexrichter0707@gmail.com">CONTACT ME</a>
+        </div>
+    </div>
 
-    <hr />
-    <h3>Schulische Laufbahn</h3>
-    <!-- ungeordnete Liste-->
-    <ul>
-      <li>
-        <a href="http://www.droste.musin.de">Droste-Hülshoff Grundschule</a>
-      </li>
-      <li>
-        <a href="http://homepage.egg-muenchen.de/index.php/de/"
-          >Erasmus-Grasser Gymnasium</a
-        >
-      </li>
-      <li><a href="https://www.hm.edu">Hochschule München</a></li>
-    </ul>
-    <hr />
-    <h3>Berufserfahrung</h3>
-    <!-- Tabelle: mögliche Strukturen mit <thead>, <tbody> und <tfoot>
-        border definiert die Breite des Rahmens in Pixeln, jedoch veraltet-->
-    <table cellspacing="10">
-      <thead>
-        <tr>
-          <th>Zeiträume</th>
-          <th>Arbeitgeber</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>09/2020 - heute</td>
-          <td>adesso SE</td>
-        </tr>
-        <tr>
-          <td>02/2019 - heute</td>
-          <td>ZenJob GmbH</td>
-        </tr>
-        <tr>
-          <td>06/2018 - 11/2018</td>
-          <td>Aushilfe bei REWE Markt GmbH</td>
-        </tr>
-        <tr>
-          <td>11/2017 - 03/2018</td>
-          <td>Aushilfe bei Foot Locker Germany</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/alexander-richter-5927a71bb/">LinkedIn</a>
+        <a class="footer-link" href="https://www.facebook.com/alex.richter.3363">Facebook</a>
+        <p class="copyright" >© 2021 Richter Alexander.</p>
+    </div>
+</body>
 
-    <!-- Nested Tabelle-->
-    <h3>Kenntnisse und Fähigkeiten</h3>
-    <table cellspacing="10">
-      <tbody>
-        <tr>
-          <td>Java</td>
-          <td>⭐⭐</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>⭐⭐</td>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td>⭐</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <hr />
-    <!-- Anchor Tags-->
-    <a href="hobbies.html">Meine Hobbys</a>
-    <h3>Lieblingsgerichte</h3>
-    <!-- Liste mit römischen Zeichen-->
-    <ol type="i">
-      <li>Massaman Curry</li>
-      <li>Lachs</li>
-      <li>Avocado Burger</li>
-    </ol>
-    <h3>Weitere Lieblingsgerichte</h3>
-    <!-- Startpunkt festlegen-->
-    <ol start="4">
-      <li>Wiener Schnitzel</li>
-      <li>Dürüm</li>
-      <li>Sushi</li>
-    </ol>
-    <a href="contact.html">Kontaktiere mich!</a>
-  </body>
 </html>
